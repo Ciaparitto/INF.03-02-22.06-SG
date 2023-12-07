@@ -1,0 +1,47 @@
+*{
+    font-family: Cambira;
+    text-align: center;
+    margin: 0px;
+}
+#baner,footer{
+    background-color: rgb(120, 0, 46);
+    color: white;
+    padding: 5px;
+    font-size: 150%;
+    clear: both;
+}
+#menu{
+    background-color: rgb(173, 20, 87);
+    text-align: left;
+}
+#lewy{
+    background-color: snow;
+    color: olivedrab;
+    width: 60%;
+    height: 332px;
+    text-align: left;
+    float: left;
+}
+#prawy{
+    background-color: rgb(173, 20, 87);
+    width: 40%;
+    height: 332px;
+    float: right;
+}
+#samo{
+    margin: 40px;
+    padding: 10px;
+}
+#samo:hover{
+    border: 1px dotted yellowgreen;
+}
+a{
+    padding:0px 50px;
+    color: white;
+}
+table,td{
+    border: 1px olivedrab solid;
+}
+table{
+    width: 90%;
+}

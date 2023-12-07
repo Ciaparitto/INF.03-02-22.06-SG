@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styl2.css">
+</head>
+<body>
+    <div id="baner"><h1>Calodobowa Stacja Paliw</h1></div>
+    <div id="menu">
+        <a href="stajca.html"><img src="home.png" alt=""></a>
+        <a href="obliczenia.html"><img src="znak.png" alt=""></a>
+        <a href="kwerendy.txt">Pobierz Dokumnety</a>
+    </div>
+
+    <div id="lewy">
+        <h2>Orientacyjny koszt paliwa</h2>
+        <label for="Rodzaj">(1-benzyna, 2-olejnapędowy)</label>
+        <p></p>
+        <input type="number" name="Rodzaj" id="Rodzaj">
+        <p></p>
+       <label for="litry">ile litrow</label>
+     <p></p>
+        <input type="number" name="litry" id="litry">
+      <p></p>
+        <button onclick="oblicz()">Oblicz</button>
+        <p id="miejsceNaCene"></p>
+    </div>
+    <div id="prawy">
+        <img src="samochod.jpg" alt="samochod" id="samo">
+    </div>
+    <footer>Strone Przygotowal:00000000</footer>
+</body>
+<script>
+    function oblicz()
+    {
+        
+        var cena = 0;
+        
+        var Rodzaj = document.getElementById("Rodzaj").value;
+        var ilosc = document.getElementById("litry").value;
+       
+        
+        if(Rodzaj == 1)
+        {
+            cena = 4 * ilosc;
+            
+        }
+        if(Rodzaj == 2)
+        {
+            cena =  3.5 * ilosc;
+        }
+        document.getElementById("miejsceNaCene").innerHTML = cena;
+    }
+</script>
+</html>
