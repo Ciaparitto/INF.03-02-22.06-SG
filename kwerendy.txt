@@ -1,0 +1,7 @@
+SELECT marka,rocznik FROM samochody WHERE kolor = 'niebieski'
+
+SELECT COUNT(id) FROM samochody WHERE marka = 'Toyota' OR marka = 'Opel' 
+
+CREATE USER 'jan'@'localhost' IDENTIFIED BY 'janKowalski1@'GRANT SELECT,INSERT,UPDATE ON samochody TO jan
+
+GRANT SELECT,INSERT,UPDATE ON samochody TO jan
